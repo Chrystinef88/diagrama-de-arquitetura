@@ -2,3 +2,101 @@
 diagrama de arquitetura usando S3 e lambda.
 Desafio proposta no bootcamp do Santander/Dio.
 Foi escolhido fazer uma arquitetura usando um S3 e lambda, onde um usuário cria uma trigger para uma storage s3, fazendo o upload de um arquivo.
+[Diagrama S3 e lambda.drawio](https://github.com/user-attachments/files/23287876/Diagrama.S3.e.lambda.drawio)
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
+  <diagram name="Página-1" id="QuiuxGt5r8CojO9-qC_x">
+    <mxGraphModel dx="1240" dy="716" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XERLIiDxng9nl31QKidH-67" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;" vertex="1" parent="1">
+          <mxGeometry x="39" y="58" width="1104" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-21" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;AWS Cloud&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="493.5" y="138" width="195" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-22" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda;fillColor=#F58534;gradientColor=none;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="564" y="370" width="75" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="561.3333333333333" y="421.5" as="targetPoint" />
+            <mxPoint x="331" y="421.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-33" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="249" y="385" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;dashed=1;" edge="1" parent="1" source="XERLIiDxng9nl31QKidH-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="649.3333333333333" y="413.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;" edge="1" parent="1" source="XERLIiDxng9nl31QKidH-34" target="XERLIiDxng9nl31QKidH-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-34" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="821" y="373" width="72" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-37" value="" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;" vertex="1" parent="1">
+          <mxGeometry x="807" y="537" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-40" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;user application&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="805" y="619" width="255" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-41" value="Amazon Dynamo DB" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="806" y="337" width="101" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-42" value="AWS Lambda" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="577" y="466" width="60" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-45" value="Amazon S3 Simple Storage" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="252" y="445" width="96" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="607" y="289" as="sourcePoint" />
+            <mxPoint x="607" y="289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;" edge="1" parent="1" source="XERLIiDxng9nl31QKidH-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="628" y="376" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="689" y="234" />
+              <mxPoint x="689" y="369" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-51" value="Invoke action" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="717" y="213" width="119" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;entryX=0.013;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XERLIiDxng9nl31QKidH-54" target="XERLIiDxng9nl31QKidH-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570.6666666666667" y="366.66666666666674" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="497" y="241" />
+              <mxPoint x="497" y="367" />
+              <mxPoint x="565" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-54" value="Event Trigger&lt;div&gt;(e.g. PUT object)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="314" y="207" width="135" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-61" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sns;fillColor=#D9A741;gradientColor=none;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="972" y="375" width="76.5" height="76.5" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-63" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.mobile;pointerEvents=1;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="993.25" y="533" width="34" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;" edge="1" parent="1" source="XERLIiDxng9nl31QKidH-61" target="XERLIiDxng9nl31QKidH-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XERLIiDxng9nl31QKidH-72" value="Amazon SNS" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="953.25" y="326" width="114" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
